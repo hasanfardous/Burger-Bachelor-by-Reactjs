@@ -19,7 +19,7 @@ function AddOffer() {
 
     const offerObj = { title, price, discount, img_url, text };
 
-    fetch('http://localhost:5500/addOffer', {
+    fetch('https://frightful-hollow-00954.herokuapp.com/addOffer', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'

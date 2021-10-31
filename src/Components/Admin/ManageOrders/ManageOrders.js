@@ -12,7 +12,7 @@ function ManageOrders() {
 
   const [orders, setOrders] = useState([]);
   useEffect(() => {
-      fetch('http://localhost:5500/orders')
+      fetch('https://frightful-hollow-00954.herokuapp.com/orders')
           .then(res => res.json())
           .then(data => setOrders(data))
   }, []);

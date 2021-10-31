@@ -15,7 +15,7 @@ const OfferDetails = () => {
     const { title, price, discount, img_url, text } = singleItem;
 
     useEffect(() => {
-        const url = `http://localhost:5500/offer/${id}`;
+        const url = `https://frightful-hollow-00954.herokuapp.com/offer/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setSingleItem(data))

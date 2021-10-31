@@ -7,7 +7,7 @@ const Offers = (props) => {
     const [offers, setOffers] = useState([]);
     const [orders, setOrders] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5500/offers')
+        fetch('https://frightful-hollow-00954.herokuapp.com/offers')
             .then(res => res.json())
             .then(data => setOffers(data))
     }, []);
